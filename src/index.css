@@ -134,3 +134,15 @@ cursor: pointer;
 .button.primary{
   background-color: #f0c040;
 }
+
+/*Filter */
+.filter{
+  display:flex;
+  padding: 1rem;
+  justify-content: space-between; 
+  margin: 1rem;
+  border-bottom: 0.1rem #C0C0C0C0 solid;
+}
+.filter div{
+  flex: 1;
+}
