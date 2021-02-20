@@ -15,7 +15,7 @@ class App extends React.Component {
     }
     this.filterProducts = this.filterProducts.bind(this);
   }
-  sortProducts = (event) => {//sort event
+  sortProducts = (event) => {//sort function event
    const sort= event.target.value
     console.log(event.target.value)
     this.setState((state) => ({ //another form of setStae which accepts the current state and returns an object which is the new state
@@ -37,7 +37,7 @@ class App extends React.Component {
   };
 
 
-  filterProducts(event){//filter event
+  filterProducts(event){//filter function event
     console.log(event.target.value )
 
     if(event.target.value==="") {
@@ -46,6 +46,7 @@ class App extends React.Component {
       this.setState({ size: event.target.value, products: data.products.filter(product => product.availableSizes.indexOf(event.target.value)>=0)});
     }
   };
+
   render(){
   return (
     <div className="grid-container">
